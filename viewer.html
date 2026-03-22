@@ -4,35 +4,46 @@
     <title>BIM QR Viewer</title>
 </head>
 
-<body style="text-align:center; font-family:Arial;">
+<body style="font-family:Arial; margin:20px;">
 
-<h2>QR-Based BIM Element Access</h2>
-<h3>Element: Column C1</h3>
+<h2 style="text-align:center;">QR-Based BIM Element Access</h2>
 
-<p style="color:gray;">
-Click below to open the model. Use search or manual navigation to locate Column C1.
-</p>
+<div style="display:flex; gap:20px;">
+
+    <!-- LEFT SIDE: MODEL BUTTON -->
+    <div style="flex:1; text-align:center;">
+
+        <h3>3D Model</h3>
+
+        <a href="https://autode.sk/3NmgSmu" target="_blank">
+            <button style="padding:12px 20px; background:blue; color:white; border:none;">
+                Open BIM Model (C1 Highlighted)
+            </button>
+        </a>
+
+    </div>
+
+    <!-- RIGHT SIDE: ELEMENT DETAILS -->
+    <div style="flex:1; border:1px solid gray; padding:15px;">
+
+        <h3>Column Details (C1)</h3>
+
+        <p><b>Element ID:</b> C1</p>
+        <p><b>Type:</b> Reinforced Concrete Column</p>
+        <p><b>Material:</b> M30 Concrete</p>
+        <p><b>Dimensions:</b> 200mm x 200mm</p>
+        <p><b>Height:</b> 3.2 m</p>
+        <p><b>Location:</b> Ground Floor - Grid A1</p>
+        
+    </div>
+
+</div>
 
 <br>
 
-<a href="https://viewer.autodesk.com/id/dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6YTM2MHZpZXdlci1wcm90ZWN0ZWQvdDE3NzQxNzg4NDlfZTg0Mzk0ZjYtOGIyZi00YzdlLWJhMjctNWM4NDhhMWE5YWE2LmlmYw?sheetId=Yzk2Njc0ZWMtMjRjMC00ODQ4LTllOWItZmE3ODYxZGI4YzRj" target="_blank">
-<button style="padding:12px 25px; font-size:16px; background-color:blue; color:white; border:none;">
-Open BIM Model
-</button>
-</a>
-
-<br><br>
-
-<button onclick="guide()" 
-style="padding:10px 20px; font-size:16px; background-color:green; color:white; border:none;">
-Locate Column C1
-</button>
-
-<script>
-function guide() {
-    alert("After opening the model:\n\n1. Use search tool\n2. Type: C1\n3. Select the column\n\nThis represents QR-based element access");
-}
-</script>
+<p style="text-align:center; color:gray;">
+Scan QR → Open model → View element details simultaneously
+</p>
 
 </body>
 </html>
